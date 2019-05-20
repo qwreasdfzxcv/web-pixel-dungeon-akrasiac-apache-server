@@ -3,7 +3,7 @@
   <head>
     <title>Web Pixel Akrasiac</title>
     <link rel="shortcut icon" href="favicon.ico" />
-    <link rel="stylesheet" type="text/css" href="" />
+    <link rel="stylesheet" type="text/css" href="dashboard/css/minimalist.css" />
   </head>
 
   <body class="index">

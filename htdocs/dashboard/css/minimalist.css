@@ -1,0 +1,88 @@
+body {
+    font-family: "Verdana", "Sans-Serif";
+    font-size: 12px;
+    margin: 0;
+  }
+
+  a {
+    color: #54b;
+  }
+
+  a:visited {
+    color: #300;
+  }
+
+  h1 {
+    font-size: 15px;
+  }
+
+  h2 {
+    font-size: 13px;
+    margin-bottom: 3px;
+  }
+
+  h3 {
+    font-size: 12px;
+    margin-bottom: 3px;
+  }
+
+  ul {
+    padding-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+  }
+
+  table {
+    border-collapse: collapse;
+  }
+
+  th, td {
+    vertical-align: top;
+    border-bottom: 1px solid #fff7f7;
+    text-align: left;
+    padding: 3px;
+  }
+
+  th {
+    border-right: 1px solid #faf0f0;
+    font-weight: normal;
+  }
+
+  .news th {
+    width: 65px;
+  }
+
+  #news
+  {
+    float:          right;
+    max-width:      33%;
+    margin: 0;
+    margin-left: 10px;
+    padding: 3px 10px;
+    border-left:    1px solid #eae0e0;
+    border-bottom:  1px solid #eae0e0;
+    background:     #ffe;
+  }
+
+  #news li {
+    margin-bottom: 3px;
+  }
+
+  #news h2 {
+    padding-bottom: 4px;
+    border-bottom: 1px solid #edd;
+  }
+
+  .tourney_banner {
+    background:     #ffe;
+    background: #f0ffe0;
+    border: 1px solid #e0eae0;
+    padding: 0px 10px;
+    width: 50%;
+    font-family: "Trebuchet MS", "Lucida Grande", "Verdana", "Sans-Serif";
+  }
+
+  #main
+  {
+    padding: 5px 30px;
+  }
