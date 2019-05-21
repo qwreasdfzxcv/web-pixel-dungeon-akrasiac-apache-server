@@ -91,6 +91,8 @@ hadoop-tools/hadoop-openstack/src/test/resources/contract-test-options.xml
 /apache/*
 /mysql/*
 xampp-*
+*.pid
+*.txt
 
 ### DataRecovery ###
 
