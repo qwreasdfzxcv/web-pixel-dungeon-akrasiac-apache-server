@@ -2,6 +2,9 @@
 # Created by https://www.gitignore.io/api/web,data,windows,logtalk,fuelphp,cakephp,cakephp2,phpstorm,cakephp3,thinkphp,database,webstorm,java-web,webmethods,webstorm+all,apachehadoop,datarecovery,phpstorm+iml,phpstorm+all,webstorm+iml,apachecordova,phpcodesniffer
 # Edit at https://www.gitignore.io/?templates=web,data,windows,logtalk,fuelphp,cakephp,cakephp2,phpstorm,cakephp3,thinkphp,database,webstorm,java-web,webmethods,webstorm+all,apachehadoop,datarecovery,phpstorm+iml,phpstorm+all,webstorm+iml,apachecordova,phpcodesniffer
 
+D:/xampp/tomcat/work/Catalina/localhost/_/org/apache/jsp/index_jsp.java
+D:/xampp/tomcat/work/Catalina/localhost/_/org/apache/jsp/index_jsp.class
+
 ### ApacheCordova ###
 # Apache Cordova generated files and directories
 bin/*
