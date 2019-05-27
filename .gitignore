@@ -371,6 +371,7 @@ modules.xml
 !/htdocs/dashboard/config.php
 !/htdocs/dashboard/db-connect.php
 !/htdocs/dashboard/user.php
+!/htdocs/dashboard/index.php
 
 ### WebMethods ###
 **/IntegrationServer/datastore/
