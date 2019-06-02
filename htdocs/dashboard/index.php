@@ -13,10 +13,6 @@
     $score = $_POST['score'];
   }
 
-  if(isset($_POST['turns'])){
-    $turns = $_POST['turns'];
-  }
-
   if(isset($_POST['class'])){
     class = $_POST['class'];
   }
@@ -38,7 +34,7 @@
   // Registration
   if(!empty($gameID)) {
 
-    $json_registration = $rankObject->createNewRegisterRank($gameID, $score, $turns, $class, $end, $depth, $level);
+    $json_registration = $rankObject->createNewRegisterRank($gameID, $score, $class, $end, $depth, $level);
     echo json_encode($json_registration);
   }
 
