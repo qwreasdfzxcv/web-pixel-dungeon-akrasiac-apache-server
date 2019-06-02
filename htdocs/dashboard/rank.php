@@ -30,9 +30,9 @@ class Rank{
     return false;
   }
 
-  public function createNewRegisterRank($gameID, $score, $turns, $class, $subclass, $end, $depth, $level) {
+  public function createNewRegisterRank($gameID, $score, $turns, $class, $end, $depth, $level) {
 
-    $query = "insert into".$this->db_table."(gameID, score, turns, class, subclass, end, depth, level) values ('$gameID', '$score', '$turns', '$class', '$subclass', '$end', '$depth', '$level')";
+    $query = "insert into".$this->db_table."(gameID, score, turns, class, end, depth, level) values ('$gameID', '$score', '$turns', '$class', '$end', '$depth', '$level')";
 
     $inserted = mysqli_query($this->db->getDb().$query);
   }

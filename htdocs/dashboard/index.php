@@ -38,7 +38,7 @@
   // Registration
   if(!empty($gameID)) {
 
-    $json_registration = $rankObject->createNewRegisterRank($gameID, $score, $turns, $class, $subclass, $end, $depth, $level);
+    $json_registration = $rankObject->createNewRegisterRank($gameID, $score, $turns, $class, $end, $depth, $level);
     echo json_encode($json_registration);
   }
 
