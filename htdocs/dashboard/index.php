@@ -1,41 +1,46 @@
 
 <?php
-  require_once 'rank.php';
 
-  $gameID = "";
+  require_once 'user.php';
 
+  $username = "";
+  $password = "";
 
-  if(isset($_POST['gameID'])){
-    $gmaeID = $_POST['gameID'];
+  if(isset($_POST['username'])) {
+
+    $username = $_POST['username']
+
   }
 
-  if(isset($_POST['score'])){
-    $score = $_POST['score'];
+  if(isset($_POST['password'])) {
+
+    $password = $_POST['password'];
+
   }
 
-  if(isset($_POST['class'])){
-    class = $_POST['class'];
-  }
+  $userObject = new User();
 
-  if(isset($_POST['end'])){
-    $end = $_POST['end'];
-  }
+  //Registration
+  if(!empty($username) && !empty($password)) {
 
-  if(isset($_POST['depth'])){
-    $depth = $_POST['depth'];
-  }
+    $hashed_password = md5($password);
 
-  if(isset($_POST['level'])){
-    $level = $_POST['level'];
-  }
+    $json_registration = $userObject->createNewRegisterUser($username, $hashed_password);
 
-  $rankObject = new Rank();
-
-  // Registration
-  if(!empty($gameID)) {
-
-    $json_registration = $rankObject->createNewRegisterRank($gameID, $score, $class, $end, $depth, $level);
     echo json_encode($json_registration);
+
+  }
+
+  //Login
+
+  if(!empty($username) && !empty($password)) {
+
+    $hashed_password = md5($password);
+
+    $json_array = $userObject->loginUsers($username, $hashed_password);
+
+    echo json_encode($json_array);
+    
   }
 
 }
