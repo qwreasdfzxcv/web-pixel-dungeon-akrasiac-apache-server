@@ -4,7 +4,7 @@ include_once 'config.php';
 class DbConnect{
   private $connect;
 
-  prblic function __construct(){
+  public function __construct(){
     $this->connect=mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
 
     if(mysqli_connect_errno($this->connect)){
